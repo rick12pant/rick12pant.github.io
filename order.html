@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Quote | Tincup Creek Fence</title>
+  <meta name="description" content="Request a quote for Tincup Creek Fence clips, insulators and tools. Tell us what you need and we'll email you pricing with shipping.">
+  <meta name="keywords" content="fencing supplies, fence clips, lay-down fence clips, laydown fence, permanent fence clips, steel t-post clips, wood post fence clips, weld-on fence clips, fence insulators, fencing tools">
+  <link rel="icon" href="images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.jpg" alt="" width="96" height="48">
+        <span class="brand-name">Tincup Creek Fence<small>Steel fence clip solutions</small></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="clips.html">Fence Clips</a></li>
+          <li><a href="tool.html">Installation Tool</a></li>
+          <li><a href="usage.html">Usage</a></li>
+          <li><a href="dealers.html">Dealers</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="order.html" aria-current="page">Request a Quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <h1>Request a Quote</h1>
+        <p>Tell us what you need and we'll email you a quote, including shipping. There's no obligation and nothing to pay now.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container order-layout">
+      <div class="quote-main">
+        <section class="helper" id="quote-helper" aria-labelledby="helper-title">
+          <h2 id="helper-title">Not sure how many you need?</h2>
+          <p class="muted">Describe your fence and we'll suggest quantities. You can change them afterward.</p>
+          <div class="helper-grid">
+            <div>
+              <label for="h-clip">Clip type</label>
+              <select id="h-clip">
+                <option value="tpl">Steel T-Post Lay-Down</option>
+                <option value="tpp">Steel T-Post Permanent</option>
+                <option value="wpl">Wood Post Lay-Down</option>
+                <option value="wo">Weld-On Steel Post Lay-Down</option>
+              </select>
+            </div>
+            <div>
+              <label for="h-length">Fence length</label>
+              <div class="length-row">
+                <input type="number" id="h-length" min="0" step="any" inputmode="decimal" placeholder="e.g. 2640">
+                <select id="h-unit" aria-label="Length unit">
+                  <option value="feet">feet</option>
+                  <option value="miles">miles</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="h-spacing">Post spacing (feet)</label>
+              <input type="number" id="h-spacing" min="1" step="any" inputmode="decimal" value="10">
+            </div>
+            <div>
+              <label for="h-wires">Wires per post</label>
+              <input type="number" id="h-wires" min="1" max="12" step="1" inputmode="numeric" value="4">
+            </div>
+            <div>
+              <label for="h-electric">How many are electric?</label>
+              <input type="number" id="h-electric" min="0" max="12" step="1" inputmode="numeric" value="0">
+            </div>
+          </div>
+          <div class="helper-result" id="helper-result" aria-live="polite" hidden></div>
+        </section>
+
+        <!--
+          Quote requests are sent with Formspree (https://formspree.io), form ID
+          xgakozdj. Which inbox receives them is set in the Formspree dashboard.
+          To use a different form, replace the ID in the action URL below. If the
+          action is set back to the YOUR_FORM_ID placeholder, the button opens the
+          customer's email app instead, addressed to data-email.
+        -->
+        <form class="order-form" id="quote-form" data-email="tincupcreekfence@gmail.com"
+              action="https://formspree.io/f/xgakozdj" method="POST" novalidate>
+          <h2 id="products">1. What do you need?</h2>
+          <p class="form-hint">Enter a quantity for each item you want. Prices are in U.S. dollars.</p>
+
+          <fieldset class="product-group">
+            <legend><a href="tpost-laydown-clip.html">Steel T-Post Lay-Down Fence Clip</a></legend>
+            <div class="order-item" data-product="tpl" data-pack="100" data-price="44.00">
+              <label for="qty-tpl-100">Bag of 100</label>
+              <span class="price">$44.00</span>
+              <input type="number" id="qty-tpl-100" name="Steel T-Post Lay-Down Fence Clip, bag of 100" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-tpl-100">$0.00</output>
+            </div>
+            <div class="order-item" data-product="tpl" data-pack="300" data-price="119.00">
+              <label for="qty-tpl-300">Box of 300</label>
+              <span class="price">$119.00</span>
+              <input type="number" id="qty-tpl-300" name="Steel T-Post Lay-Down Fence Clip, box of 300" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-tpl-300">$0.00</output>
+            </div>
+            <div class="order-item" data-product="tpl" data-pack="500" data-price="198.00">
+              <label for="qty-tpl-500">Box of 500</label>
+              <span class="price">$198.00</span>
+              <input type="number" id="qty-tpl-500" name="Steel T-Post Lay-Down Fence Clip, box of 500" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-tpl-500">$0.00</output>
+            </div>
+            <div class="order-item" data-product="tpl" data-pack="1000" data-price="397.00">
+              <label for="qty-tpl-1000">Box of 1,000</label>
+              <span class="price">$397.00</span>
+              <input type="number" id="qty-tpl-1000" name="Steel T-Post Lay-Down Fence Clip, box of 1,000" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-tpl-1000">$0.00</output>
+            </div>
+          </fieldset>
+
+          <fieldset class="product-group">
+            <legend><a href="wood-post-laydown-clip.html">Wood Post Lay-Down Fence Clip</a></legend>
+            <div class="order-item" data-product="wpl" data-pack="100" data-price="48.00">
+              <label for="qty-wpl-100">Bag of 100</label>
+              <span class="price">$48.00</span>
+              <input type="number" id="qty-wpl-100" name="Wood Post Lay-Down Fence Clip, bag of 100" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-wpl-100">$0.00</output>
+            </div>
+            <div class="order-item" data-product="wpl" data-pack="300" data-price="131.50">
+              <label for="qty-wpl-300">Box of 300</label>
+              <span class="price">$131.50</span>
+              <input type="number" id="qty-wpl-300" name="Wood Post Lay-Down Fence Clip, box of 300" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-wpl-300">$0.00</output>
+            </div>
+            <div class="order-item" data-product="wpl" data-pack="500" data-price="218.00">
+              <label for="qty-wpl-500">Box of 500</label>
+              <span class="price">$218.00</span>
+              <input type="number" id="qty-wpl-500" name="Wood Post Lay-Down Fence Clip, box of 500" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-wpl-500">$0.00</output>
+            </div>
+          </fieldset>
+
+          <fieldset class="product-group">
+            <legend><a href="weld-on-laydown-clip.html">Weld-On Steel Post Lay-Down Fence Clip</a></legend>
+            <div class="order-item" data-product="wo" data-pack="100" data-price="48.00">
+              <label for="qty-wo-100">Bag of 100</label>
+              <span class="price">$48.00</span>
+              <input type="number" id="qty-wo-100" name="Weld-On Steel Post Lay-Down Fence Clip, bag of 100" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-wo-100">$0.00</output>
+            </div>
+            <div class="order-item" data-product="wo" data-pack="600" data-price="262.00">
+              <label for="qty-wo-600">Box of 600</label>
+              <span class="price">$262.00</span>
+              <input type="number" id="qty-wo-600" name="Weld-On Steel Post Lay-Down Fence Clip, box of 600" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-wo-600">$0.00</output>
+            </div>
+          </fieldset>
+
+          <fieldset class="product-group">
+            <legend><a href="tpost-permanent-clip.html">Steel T-Post Permanent Fence Clip</a></legend>
+            <div class="order-item" data-product="tpp" data-pack="100" data-price="44.00">
+              <label for="qty-tpp-100">Bag of 100</label>
+              <span class="price">$44.00</span>
+              <input type="number" id="qty-tpp-100" name="Steel T-Post Permanent Fence Clip, bag of 100" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-tpp-100">$0.00</output>
+            </div>
+            <div class="order-item" data-product="tpp" data-pack="800" data-price="317.00">
+              <label for="qty-tpp-800">Box of 800</label>
+              <span class="price">$317.00</span>
+              <input type="number" id="qty-tpp-800" name="Steel T-Post Permanent Fence Clip, box of 800" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-tpp-800">$0.00</output>
+            </div>
+          </fieldset>
+
+          <fieldset class="product-group">
+            <legend><a href="insulator.html">Fence Clip Insulator</a></legend>
+            <div class="order-item" data-product="ins" data-pack="100" data-price="56.00">
+              <label for="qty-ins-100">Bag of 100</label>
+              <span class="price">$56.00</span>
+              <input type="number" id="qty-ins-100" name="Fence Clip Insulator, bag of 100" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-ins-100">$0.00</output>
+            </div>
+          </fieldset>
+
+          <fieldset class="product-group">
+            <legend><a href="tool.html">Installation Tool</a></legend>
+            <div class="order-item" data-product="tool" data-pack="1" data-price="132.00">
+              <label for="qty-tool-1">Stainless steel tool (for T-Post Lay-Down &amp; Permanent clips)</label>
+              <span class="price">$132.00</span>
+              <input type="number" id="qty-tool-1" name="Installation Tool, stainless steel" min="0" step="1" inputmode="numeric" placeholder="0">
+              <output class="line-total" for="qty-tool-1">$0.00</output>
+            </div>
+          </fieldset>
+
+          <div class="order-subtotal">
+            <span>Estimated subtotal</span>
+            <output id="order-subtotal" aria-live="polite">$0.00</output>
+          </div>
+          <p class="form-hint">Plus shipping. Prices and the subtotal are for estimation only and are not binding. Your quote will confirm the final price.</p>
+
+          <h2>2. Where should we ship it?</h2>
+          <div class="field-grid">
+            <div class="field span-2">
+              <label for="f-name">Full name <span class="req">*</span></label>
+              <input type="text" id="f-name" name="Name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-email">Email <span class="req">*</span></label>
+              <input type="email" id="f-email" name="email" autocomplete="email" required>
+              <small>We'll send your quote here.</small>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone (optional)</label>
+              <input type="tel" id="f-phone" name="Phone" autocomplete="tel">
+            </div>
+            <div class="field span-2">
+              <label for="f-address">Street address (optional)</label>
+              <input type="text" id="f-address" name="Address" autocomplete="street-address">
+            </div>
+            <div class="field">
+              <label for="f-city">City <span class="req">*</span></label>
+              <input type="text" id="f-city" name="City" autocomplete="address-level2" required>
+            </div>
+            <div class="field field-row">
+              <div>
+                <label for="f-state">State <span class="req">*</span></label>
+                <input type="text" id="f-state" name="State" autocomplete="address-level1" required>
+              </div>
+              <div>
+                <label for="f-zip">ZIP <span class="req">*</span></label>
+                <input type="text" id="f-zip" name="ZIP" autocomplete="postal-code" inputmode="numeric" required>
+              </div>
+            </div>
+          </div>
+
+          <h2>3. Anything else?</h2>
+          <fieldset class="payment-options">
+            <legend class="field-legend">How would you prefer to pay? (optional)</legend>
+            <label class="radio-card">
+              <input type="radio" name="Payment preference" value="Credit card (PayPal invoice)">
+              <span><strong>Credit card</strong> We'll email you a PayPal invoice.</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="Payment preference" value="Check or money order">
+              <span><strong>Check or money order</strong> U.S. dollars only, mailed to our PO Box.</span>
+            </label>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-notes">Project details or questions (optional)</label>
+            <textarea id="f-notes" name="Project details" rows="4"></textarea>
+          </div>
+
+          <!-- Spam trap: real visitors never see or fill this in -->
+          <div class="hp" aria-hidden="true">
+            <label for="f-company">Leave this empty</label>
+            <input type="text" id="f-company" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" data-label="Request quote">Request quote</button>
+            <span class="form-hint">No obligation, and nothing to pay now.</span>
+          </div>
+          <p class="form-hint form-privacy">Privacy: we use your details only to reply to your request and send your order, and we never sell them. Requests are delivered to us through the form service Formspree.</p>
+        </form>
+      </div>
+      <aside class="order-aside">
+        <div class="contact-card">
+          <h2>How it works</h2>
+          <ol class="steps">
+            <li>Tell us what you need.</li>
+            <li>We email you a quote, including shipping.</li>
+            <li>Pay by PayPal invoice or check, and we ship your order.</li>
+          </ol>
+        </div>
+        <div class="contact-card">
+          <h2>Prefer to call?</h2>
+          <p><a class="big" href="tel:+12088733000">208-873-3000</a></p>
+          <p><a href="mailto:tincupcreekfence@gmail.com">tincupcreekfence@gmail.com</a></p>
+          <p class="paper-note">Prefer paper? <a href="docs/order-form.pdf" target="_blank" rel="noopener">Print our order form (PDF)</a> and mail it in.</p>
+        </div>
+        <div class="contact-card">
+          <h2>We accept PayPal</h2>
+          <a class="paypal-mark" href="https://www.paypal.com/webapps/mpp/paypal-popup" target="_blank" rel="noopener" title="How PayPal Works">
+            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_SbyPP_mc_vs_dc_ae.jpg" alt="Secured by PayPal: Mastercard, Visa, Discover, American Express" width="319" height="110">
+          </a>
+        </div>
+      </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Tincup Creek Fence</h3>
+          <p>Durable, innovative, and versatile steel fencing clip solutions. Home of the labor-saving stretch-through clips.</p>
+          <p>We accept PayPal. Just let us know on your order and we'll invoice you.</p>
+          <a class="paypal-mark" href="https://www.paypal.com/webapps/mpp/paypal-popup" target="_blank" rel="noopener" title="How PayPal Works">
+            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_SbyPP_mc_vs_dc_ae.jpg" alt="Secured by PayPal: Mastercard, Visa, Discover, American Express" width="200" height="51" loading="lazy">
+          </a>
+        </div>
+        <div>
+          <h3>Products</h3>
+          <ul>
+            <li><a href="tpost-laydown-clip.html">T-Post Lay-Down Clip</a></li>
+            <li><a href="wood-post-laydown-clip.html">Wood Post Lay-Down Clip</a></li>
+            <li><a href="weld-on-laydown-clip.html">Weld-On Lay-Down Clip</a></li>
+            <li><a href="tpost-permanent-clip.html">T-Post Permanent Clip</a></li>
+            <li><a href="insulator.html">Insulator</a></li>
+            <li><a href="tool.html">Installation Tool</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <address>
+            Tincup Creek Fence<br>
+            PO Box 174<br>
+            Freedom, WY 83120<br>
+            <a href="tel:+12088733000">208-873-3000</a><br>
+            <a href="mailto:tincupcreekfence@gmail.com">tincupcreekfence@gmail.com</a>
+          </address>
+        </div>
+      </div>
+      <p class="copyright">Copyright &copy; 2007&ndash;2026 tincupcreekfence.com, Inc. All rights reserved. All products made in the State of Idaho, U.S.A.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/quote.js"></script>
+</body>
+</html>
